@@ -1,11 +1,109 @@
-﻿<!DOCTYPE html>
-
+﻿<!--
+    index.html
+-->
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title>Simulator Rate</title>
+    <title>Simulator credit</title>
+    <link href="/css/site.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Simulator Rate</h1>
+    <div class="container_all">
+        <h1>Simulator credit</h1>
+        <div class="header">
+            <form id="h2">
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">Simulator credit</a></li>
+                        <li><a href="/instructiuni.html">Instructiuni</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <img src="img/money.jpg" class="borderd-image" />
+            </form>
+            <div>
+                <div id="loginToggle">Login</div>
+                <form class="popup">
+                    <label><a href="/signup.html">Sign up</a></label><br />
+                    <label>E-Mail:</label>
+                    <input type="email" /><br />
+                    <label>Password:</label>
+                    <input type="password" /><br />
+                    <input type="checkbox" />
+                    <label>Remember Me?</label><br />
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+        <section class="main">
+            <div id="div1">Ai mai jos un calculator de credite ca să îți faci o simulare cu toate costurile creditului tău</div>
+            <p>Daca doriti sa aplicati pentru un credit, completati formularul de mai jos si veti fi contactat in maxim 24 de ore</p>
+            <form method="post" id="form">
+                <div class="container">
+                    <label>Nume:</label>
+                    <input type="text" name="Nume"><br />
+                    <label>Prenume:</label>
+                    <input type="text" name="Prenume"><br />
+                    <label>Judet:</label>
+                    <select name="county" id="Judet">
+                        <option value="AB">Alba</option>
+                        <option value="AG">Arges</option>
+                        <option value="AR">Arad</option>
+                        <option selected value="B">Bucuresti</option>
+                        <option value="BC">Bacau</option>
+                        <option value="BH">Bihor</option>
+                        <option value="BN">Bistrita</option>
+                        <option value="BR">Braila</option>
+                        <option value="BT">Botosani</option>
+                        <option value="BV">Brasov</option>
+                        <option value="BZ">Buzau</option>
+                        <option value="CJ">Cluj</option>
+                        <option value="CL">Calarasi</option>
+                        <option value="CS">Caras-Severin</option>
+                        <option value="CT">Constanta</option>
+                        <option value="CV">Covasna</option>
+                        <option value="DB">Dambovita</option>
+                        <option value="DJ">Dolj</option>
+                        <option value="GJ">Gorj</option>
+                        <option value="GL">Galati</option>
+                        <option value="GR">Giurgiu</option>
+                        <option value="HD">Hunedoara</option>
+                        <option value="HG">Harghita</option>
+                        <option value="IF">Ilfov</option>
+                        <option value="IL">Ialomita</option>
+                        <option value="IS">Iasi</option>
+                        <option value="MH">Mehedinti</option>
+                        <option value="MM">Maramures</option>
+                        <option value="MS">Mures</option>
+                        <option value="NT">Neamt</option>
+                        <option value="OT">Olt</option>
+                        <option value="PH">Prahova</option>
+                        <option value="SB">Sibiu</option>
+                        <option value="SJ">Salaj</option>
+                        <option value="SM">Satu-Mare</option>
+                        <option value="SV">Suceava</option>
+                        <option value="TL">Tulcea</option>
+                        <option value="TM">Timis</option>
+                        <option value="TR">Teleorman</option>
+                        <option value="VL">Valcea</option>
+                        <option value="VN">Vrancea</option>
+                        <option value="VS">Vaslui</option>
+                    </select><br />
+                    <label>Oras:</label>
+                    <input type="text" name="city"><br />
+                    <label>Telefon:</label>
+                    <input type="text" name="Telefon"><br />
+                    <label>Mesaj:</label>
+                    <textarea rows="4"></textarea><br />
+                    <input id="cerere" type="submit" value="Trimite cererea">
+                </div>
+            </form>
+    </section>
+    <footer>
+        &copy; 2020 Cezar Marin
+    </footer>
+    </div>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

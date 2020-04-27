@@ -1,0 +1,160 @@
+/* site.css 
+body {
+	font-family: Segoe UI, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	background-color: darkgreen;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+#loginToggle {
+	cursor: pointer;
+}
+
+#signupToggle {
+	cursor: pointer;
+}
+
+.popup {
+	padding: 5px;
+	border: 2px black inset;
+	display: inline-block;
+}
+
+.popup input {
+	width: 200px;
+}
+
+.popup label {
+	width: 150px;
+	display: inline-block;
+}
+
+.popup input[type=submit], .popup input[type=checkbox]
+{
+	width: auto;
+}
+
+h1{
+	padding-left: 400px;
+	margin: 1px;
+}
+
+menu {
+	margin: 1px;
+}
+
+menu ul {
+	margin: 1px;
+}
+
+menu li {
+	display: inline;
+	font-size: 13px;
+}
+
+menu li::after{
+	content: ' |';
+}
+
+menu li:last-of-type::after {
+	content: "";
+}
+
+a {
+	color: green;
+}
+
+header {
+	border: solid 1px black;
+	border-radius: 5px;
+	margin: auto;
+	padding: 0px 5px;
+	width: 989px;
+	background-color: darkgray;
+}
+
+h2 {
+	border: solid 1px black;
+	margin: auto;
+	padding: 5px;
+	width: 989px;
+	background-color: darkgray;
+}
+
+.borderd-image {
+	border: solid 1px #444;
+	border-radius: 2px;
+	margin-left: 1px;
+	float: right;
+}
+
+.main input[type=submit], form input[type=submit] {
+	background-color: darkgreen;
+	border-color: darkgreen;
+	color: white;
+	border-radius: 15px;
+	padding: 3px;
+	margin-top: 5px;
+	width: auto;
+}
+
+.main {
+	width: auto;
+	margin: auto;
+	background-color: darkgray;
+	padding: 5px;
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	color: #202020;
+}
+
+.mainc {
+	width: 985px;
+	margin: auto;
+	background-color: darkgray;
+	padding: 5px;
+	border: solid 1px #ccc;
+	color: #202020;
+}
+
+.container_all {
+	width: 989px;
+	margin: auto;
+	background-color: darkgray;
+	padding: 5px;
+}
+
+.container input, form input, textarea {
+  width: 200px;
+  display: inline-block;
+  border: solid 1px black;
+  padding: 1px 0px;
+}
+
+.container label, form label {
+  width: 70px;
+  display: inline-block;
+}
+
+.container select {
+	border: solid 1px black;
+	padding: 1px;
+	width: 200px;
+}
+
+#cerere {
+	padding: 3px;
+}
+
+footer {
+	background-color: lightgray;
+	border: solid 1px black;
+	padding: 5px;
+	border-radius: 3px;
+	width: 989px;
+	margin: auto;
+}*/

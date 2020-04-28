@@ -11,12 +11,12 @@
             <div class="form-group">
                  <label asp-for="Nume">Nume:</label>
                  <input asp-for="Nume" class="form-control" />
-                 <span asp-validation-for="Nume"></span>
+                 <span asp-validation-for="Nume" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Prenume">Prenume:</label>
                 <input asp-for="Prenume" class="form-control" />
-                 <span asp-validation-for="Prenume"></span>
+                <span asp-validation-for="Prenume" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Judet">Judet:</label>
@@ -68,21 +68,21 @@
             <div class="form-group">
                 <label asp-for="Oras">Oras:</label>
                 <input asp-for="Oras" class="form-control" />
-                <span asp-validation-for="Oras"></span>
+                <span asp-validation-for="Oras" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Email">Email:</label>
                 <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email"></span>
+                <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Mesaj">Mesaj:</label>
                 <textarea rows="4" asp-for="Mesaj" class="form-control"></textarea>
-                <span asp-validation-for="Mesaj"></span>
+                <span asp-validation-for="Mesaj" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Trimite cererea">
-                <div>@ViewBag.UserMessage</div>
+                <input type="submit" value="Trimite cererea" class="btn btn-primary" />
+                <div class="text-success">@ViewBag.UserMessage</div>
             </div>
         </form>
     </div>

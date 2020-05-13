@@ -1,5 +1,5 @@
 {
   "ConnectionStrings": {
-    "LoanConnectionString": "server=(localdb)\\ProjectsV13;Database=LoanAppDb;Integrated Security=true;MultipleActiveResultSets=true;"
+    "LoanConnectionString": "server=(localdb)\\ProjectsV13;Database=WebApp;Integrated Security=true;MultipleActiveResultSets=true;"
   }
 }

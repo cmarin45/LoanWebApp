@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace LoanWebApp.Views.App
 {
-    public class intrebariModel : PageModel
+    public class ShopModel : PageModel
     {
         public void OnGet()
         {

@@ -1,4 +1,5 @@
-﻿using LoanWebApp.Services;
+﻿using LoanWebApp.Data;
+using LoanWebApp.Services;
 using LoanWebApp.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,20 +11,17 @@ namespace LoanWebApp.Controllers
 {
     public class AppController: Controller
     {
-        private readonly IMailService mailService;
+        private readonly IMailService _mailService;
+        private readonly LoanContext _ctx;
 
-        public AppController(IMailService mailService)
+        public AppController(IMailService mailService, LoanContext ctx)
         {
-            this.mailService = mailService;
+            _mailService = mailService;
+            _ctx = ctx;
         }
         public IActionResult Index()
         {
-            return View();
-        }
-        [HttpGet("intrebari")]
-        public IActionResult Intrebari()
-        {
-            ViewBag.Title = "Intrebari frecvente";
+            var results = _ctx.Products.ToList();
             return View();
         }
         [HttpGet("contact")]
@@ -37,14 +35,17 @@ namespace LoanWebApp.Controllers
             if (ModelState.IsValid)
             {
                 //send email
-                this.mailService.SendMessage("cezar@gmail.com", model.Email, $"From: {model.Nume} - {model.Prenume}, Message: {model.Mesaj}");
+                _mailService.SendMessage("cezar@gmail.com", model.Email, $"From: {model.Nume} - {model.Prenume}, Message: {model.Mesaj}");
                 ViewBag.UserMessage = "Cerere Trimisa";
                 ModelState.Clear();
             }
-            else
-            {
-                //send error
-            }
+            return View();
+        }
+        public IActionResult Shop()
+        {
+            var results = _ctx.Products
+                .OrderBy(p => p.An)
+                .ToList();
             return View();
         }
     }

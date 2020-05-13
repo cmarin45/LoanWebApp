@@ -31,6 +31,7 @@ namespace LoanWebApp
             {
                 cfg.UseSqlServer(this.config.GetConnectionString("LoanConnectionString"));
             });
+            services.AddTransient<LoanSeeder>();
             services.AddTransient<IMailService, NullMailService>();
             //Support for real mail service
             services.AddControllersWithViews();

@@ -1,22 +1,41 @@
 ﻿@{
-    ViewBag.Title = "Credit Online";
+    ViewBag.Title = "RentACar";
 }
     <div class="row">
         <div class="col-md-6">
-            <div id="loginToggle">Login</div>
-            <div id="signupToggle"> Sign up</div>
-            <form class="popup">
-                <label>E-Mail:</label>
-                <input type="email" /><br />
-                <label>Password:</label>
-                <input type="password" /><br />
-                <input type="checkbox" />
-                <label>Remember Me?</label><br />
-                <input type="submit" value="Login">
-            </form>
+            <div class="card card-body bg-light">
+                <div id="loginToggle">Login</div>
+                <div id="signupToggle"> Sign up</div>
+                <form class="popup-form">
+                    <div>
+                        <label>E-Mail:</label>
+                        <input type="email" /><br />
+                    </div>
+                    <div>
+                        <label>Password:</label>
+                        <input type="password" /><br />
+                    </div>
+                    <div>
+                        <input type="checkbox" />
+                        <label>Remember Me?</label><br />
+                    </div>
+                    <div>
+                        <input type="submit" value="Login" />
+                    </div>
+                </form>
+            </div>
             <section class="container">
-                <div id="div1">Ai mai jos un calculator de credite ca să îți faci o simulare cu toate costurile creditului tău</div>
-                <p>Daca doriti sa aplicati pentru un credit, completati formularul din pagina de contact</p>
+                <div id="div1">
+                    <h2 class="text-center">Golf 7</h2>
+                    <p><img src="~/img/7.jpg" /></p>
+                    <ul class="product-props">
+                        <li>Pret: 100RON/zi</li>
+                        <li>Motor: Benzina</li>
+                        <li>Caroserie: Hatchback </li>
+                        <li>Asigurare: 100RON/zi</li>
+                    </ul>
+                    <button id="buyButton" class="btn btn-success">Alege</button>
+                </div>
             </section>
         </div>
     </div>
